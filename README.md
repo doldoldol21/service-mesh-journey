@@ -17,8 +17,7 @@
 
 - **클러스터**: Hetzner CAX21 × 2 (ARM, 4 vCPU / 8GB RAM)
 - **K8s 배포판**: k3s
-- **IaC**: Terraform
-- **로컬 실험**: kind
+- **IaC**: OpenTofu
 - **관찰성**: Prometheus + Grafana + Kiali + Jaeger
 
 ## 로드맵
@@ -37,8 +36,7 @@
 - [01. Envoy Fundamentals](docs/concepts/01-envoy-fundamentals.md) — Listener, Route, Cluster, Endpoint와 xDS 프로토콜
 
 ### 인프라 (infrastructure/)
-- `hetzner-k3s/` — Hetzner Cloud에 k3s 클러스터 프로비저닝 (Terraform)
-- `kind/` — 로컬 빠른 실험 환경
+- `hetzner-k3s/` — Hetzner Cloud에 k3s 클러스터 프로비저닝 (OpenTofu)
 
 ### 실험 기록 (experiments/)
 - 각 실험은 독립 디렉토리. README에 목적/절차/결과/배운점 정리.
